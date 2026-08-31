@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HinduKushBioDiversity — Guardian of the Hindu Kush Peaks</title>
+  <meta name="description" content="A premier digital gateway for ecological conservation, indigenous traditional wisdom, and biodiversity research across Pakistan's high alpine zones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&family=JetBrains+Mono:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scrolling reading bar -->
+  <div class="reading-bar" id="reading-bar">
+    <div class="reading-bar__fill" id="reading-fill"></div>
+  </div>
+
+  <!-- Decorative background ornaments -->
+  <div class="ornaments" aria-hidden="true">
+    <div class="ornament ornament--watermark"><img src="images/logo.png" alt="" /></div>
+  </div>
+
+  <!-- Top announcement bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="dot dot--pulse"></span>
+        <span class="topbar__text">
+          <strong>naturelink Initiative</strong>
+          <span class="sep">|</span>
+          An ecological outcome of collaboration between
+          <em>University of the West of England (UWE)</em> &amp;
+          <em>University of Malakand (UoM)</em>
+        </span>
+      </div>
+      <div class="topbar__right">
+        <span class="topbar__fund">Funded by the</span>
+        <a href="https://pakistan.britishcouncil.org/" target="_blank" rel="noreferrer" class="topbar__link">British Council</a>
+        <span class="sep">•</span>
+        <span class="topbar__pi">PI: <em>Dr. Kishwar Ali</em></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <a class="brand__logo" href="#hero" onclick="scrollTop();return false;">
+          <img src="images/logo.png" alt="naturelink Project Logo" />
+        </a>
+        <div class="brand__text">
+          <h1 class="brand__title">HinduKushBioDiversity<span class="brand__domain">.com</span></h1>
+          <span class="brand__sub">Under Project: naturelink</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__link is-active" data-scroll="map">Map Guide</button>
+        <button class="nav__link" data-scroll="directory">Flora &amp; Fauna</button>
+        <button class="nav__link" data-scroll="ethnobotany">Ethnobotany &amp; TEK</button>
+        <button class="nav__link" data-scroll="quiz">Quiz Center</button>
+        <button class="nav__link" data-scroll="research">Research Hub</button>
+        <button class="nav__link" data-scroll="citizen">Community Ledgers</button>
+        <button class="nav__link" data-scroll="contact">Contact Us</button>
+      </nav>
+
+      <div class="header__tools">
+        <div class="lang-switch" id="lang-switch">
+          <button data-lang="en" class="is-active">EN</button>
+          <button data-lang="ur">اردو</button>
+          <button data-lang="ps">پښتو</button>
+        </div>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <span class="icon-moon">🌙</span>
+          <span class="icon-sun">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile scroll nav -->
+  <div class="mobile-nav">
+    <div class="mobile-nav__label">Scroll Navigation Explorer</div>
+    <div class="mobile-nav__scroller">
+      <button data-scroll="map">Map</button>
+      <button data-scroll="directory">Flora &amp; Fauna</button>
+      <button data-scroll="ethnobotany">Ethnobotany</button>
+      <button data-scroll="quiz">Quiz</button>
+      <button data-scroll="research">Research</button>
+      <button data-scroll="citizen">Sightings</button>
+      <button data-scroll="contact">Contact</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="badge">
+            <span class="badge__icon">🌐</span>
+            naturelink Initiative • British Council Alliance
+          </div>
+          <h2 class="hero__title">
+            Guardian of the <em>Hindu Kush</em> Peaks
+          </h2>
+          <p class="hero__tagline">
+            “A premier digital gateway for ecological conservation, indigenous traditional wisdom, and biodiversity research across Pakistan's high alpine zones.”
+          </p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scroll="map">
+              Interactive Map Guide <span class="btn__chev">⌄</span>
+            </button>
+            <button class="btn btn--ghost" data-scroll="ethnobotany">Ethnobotany &amp; Remedies</button>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="hero__frame">
+            <img src="images/hero.png" alt="Hindu Kush peaks" id="hero-img" />
+            <div class="hero__caption">
+              <span class="hero__caption-label">Landscape Profile</span>
+              <span class="hero__caption-title">Mount Tirich Mir (7,708m), High Hindu Kush Pakistan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat"><span class="stat__label">Medicinal &amp; Conifer Flora</span><p class="stat__value">4,500+ Species</p><span class="stat__sub">Indigenous high vegetation</span></div>
+          <div class="stat"><span class="stat__label">Alpine Mammals &amp; Birds</span><p class="stat__value">450+ Species</p><span class="stat__sub">Vertebrates &amp; bird species</span></div>
+          <div class="stat"><span class="stat__label">Protected High Reserves</span><p class="stat__value">15 High Sanctuary Parks</p><span class="stat__sub">With active communities</span></div>
+          <div class="stat"><span class="stat__label">Ethnobotany Records</span><p class="stat__value">180+ Local Remedies</p><span class="stat__sub">Herbal formulation logs</span></div>
+          <div class="stat"><span class="stat__label">Scientific Dataset Repos</span><p class="stat__value">65+ Academic Studies</p><span class="stat__sub">Local scientific papers</span></div>
+          <div class="stat"><span class="stat__label">Citizen Scientific Logs</span><p class="stat__value">120+ High Sighting Reports</p><span class="stat__sub">By school science squads</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section class="section" id="map">
+      <div class="container">
+        <div class="card card--map">
+          <div class="card__head">
+            <span class="kicker">naturelink Initiative • GIS Regional Map</span>
+            <h3 class="card__title">Interactive Hindu Kush Ecological Map</h3>
+            <p class="card__desc">Select an alpine district of Pakistan to explore localized habitats, protected reservation parks, altitude levels, custom species counts, and climate zone diagnostics.</p>
+          </div>
+
+          <div class="map__layout">
+            <div class="map__canvas">
+              <div class="map__chip">📍 N. Pakistan high zones</div>
+              <svg class="map__svg" viewBox="0 0 160 140" id="district-map" xmlns="http://www.w3.org/2000/svg">
+                <!-- network lines -->
+                <line x1="50" y1="35" x2="60" y2="70" stroke="#10b981" stroke-width="0.5" stroke-dasharray="1 2" opacity="0.4" />
+                <line x1="60" y1="70" x2="55" y2="95" stroke="#10b981" stroke-width="0.5" stroke-dasharray="1 2" opacity="0.4" />
+                <line x1="60" y1="70" x2="80" y2="65" stroke="#10b981" stroke-width="0.5" stroke-dasharray="1 2" opacity="0.4" />
+                <line x1="80" y1="65" x2="105" y2="65" stroke="#10b981" stroke-width="0.5" stroke-dasharray="1 2" opacity="0.4" />
+                <line x1="105" y1="65" x2="100" y2="90" stroke="#10b981" stroke-width="0.5" stroke-dasharray="1 2" opacity="0.4" />
+                <line x1="80" y1="65" x2="75" y2="110" stroke="#10b981" stroke-width="0.5" stroke-dasharray="1 2" opacity="0.4" />
+                <!-- mountain marks -->
+                <path d="M 25,60 L 30,52 L 35,60" fill="none" stroke="#e7e5e4" stroke-width="0.5" opacity="0.3" />
+                <path d="M 120,35 L 126,24 L 132,35" fill="none" stroke="#e7e5e4" stroke-width="0.5" opacity="0.3" />
+                <path d="M 135,110 L 140,100 L 145,110" fill="none" stroke="#e7e5e4" stroke-width="0.5" opacity="0.3" />
+                <!-- district markers injected by JS -->
+                <g id="district-markers"></g>
+              </svg>
+              <div class="map__legend">
+                <span class="map__legend-title">Interactive Map Legend</span>
+                <span><i class="swatch swatch--green"></i> Low pressure zones (&lt;= 4)</span>
+                <span><i class="swatch swatch--yellow"></i> Moderate threat (5-7)</span>
+                <span><i class="swatch swatch--rose"></i> Critical threat (&gt;= 8)</span>
+              </div>
+            </div>
+
+            <div class="map__detail" id="map-detail">
+              <!-- populated by JS -->
+            </div>
+          </div>
+
+          <div class="map__tabs" id="map-tabs"></div>
+          <div class="map__footnote">✔ GIS validated under British Council naturelink data ledger 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><span>🌿</span></div>
+
+    <!-- Flora & Fauna Directory -->
+    <section class="section" id="directory">
+      <div class="container">
+        <div class="card card--directory">
+          <div class="directory__controls">
+            <div class="tabs" id="dir-tabs">
+              <button class="tab is-active" data-tab="flora">🌿 Flora (Plants)</button>
+              <button class="tab" data-tab="fauna">🐾 Fauna (Wildlife)</button>
+            </div>
+            <div class="directory__filters">
+              <select id="filter-status" aria-label="Filter by conservation status">
+                <option value="all">Status: All Categories</option>
+                <option value="LC">Least Concern (LC)</option>
+                <option value="NT">Near Threatened (NT)</option>
+                <option value="VU">Vulnerable (VU)</option>
+                <option value="EN">Endangered (EN)</option>
+                <option value="CR">Critically Endangered (CR)</option>
+              </select>
+              <select id="filter-district" aria-label="Filter by district">
+                <option value="all">Districts: All Categories</option>
+                <option value="Swat">Swat</option>
+                <option value="Chitral">Chitral</option>
+                <option value="Upper Dir">Upper Dir</option>
+                <option value="Lower Dir">Lower Dir</option>
+                <option value="Shangla">Shangla</option>
+                <option value="Buner">Buner</option>
+              </select>
+            </div>
+          </div>
+          <div class="directory__search">
+            <input type="text" id="species-search" placeholder="Search scientific, local or common name..." />
+          </div>
+          <div class="species-grid" id="species-grid"></div>
+          <div class="species-empty" id="species-empty" hidden>
+            <strong>No matching species discovered</strong>
+            <p>Adjust your scientific search filter or switch tabs between plants and wildlife.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><span>🌿</span></div>
+
+    <!-- Ethnobotany -->
+    <section class="section" id="ethnobotany">
+      <div class="container">
+        <div class="card card--ethno">
+          <div class="card__head card__head--between">
+            <div>
+              <span class="kicker">naturelink Flagship Segment</span>
+              <h3 class="card__title">Ethnobotany &amp; Traditional Ecological Knowledge</h3>
+              <p class="card__desc">For centuries, local communities of Swat, Upper Dir, Lower Dir, and Chitral have maintained a profound harmony with nature. Explore traditional herbal remedies, sustainable mountain foraging practices, and conservation wisdom passed down through elders.</p>
+            </div>
+            <div class="chip">📖 TEK Science Standard</div>
+          </div>
+
+          <div class="ethno__tabs">
+            <button class="tab is-active" data-ethno="all">Explore All TEK</button>
+            <button class="tab" data-ethno="remedies">Traditional Remedial Flora</button>
+            <button class="tab" data-ethno="harvest">Sustainable Foraging Rules</button>
+            <button class="tab" data-ethno="elders">Elders Oral lore &amp; Narrative logs</button>
+          </div>
+
+          <div class="ethno__layout">
+            <div class="ethno__main">
+              <section class="ethno__block" data-ethno-block="all remedies">
+                <h4 class="ethno__subtitle">💚 Documented Medicinal Plant Remedies</h4>
+                <div class="remedy-grid" id="remedy-grid"></div>
+              </section>
+
+              <section class="ethno__block" data-ethno-block="all harvest">
+                <h4 class="ethno__subtitle">⚖️ Indigenous Sustainable Harvesting Protocols</h4>
+                <div class="harvest-panel">
+                  <p>Indigenous communities have historically followed strict tribal agreements called <strong>“Asar”</strong> or local custom protocols that safeguard botanical ecosystems from overexploitation, especially in Swat, Kalam, and Lower Dir.</p>
+                  <div class="harvest-grid">
+                    <div class="harvest-card"><strong>1. Late-Season Autumn Harvest</strong><span>Deep root extraction of perennial herbs is legally prohibited during green nesting seasons. Foraging is permitted only as the foliage enters winter sleep.</span></div>
+                    <div class="harvest-card"><strong>2. Leaf and Nut Canvas Shields</strong><span>Instead of using metal cutters or pulling tree limbs, collectors utilize flexible safety hooks to harvest pine cones, preventing damage to future seed points.</span></div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="ethno__block" data-ethno-block="all elders">
+                <h4 class="ethno__subtitle">🎤 Elder Oral Wisdom &amp; Narrative Transcripts</h4>
+                <div class="elder-grid" id="elder-grid"></div>
+              </section>
+            </div>
+
+            <aside class="ethno__sidebar">
+              <span class="ethno__sidebar-icon">📖</span>
+              <h4>Ethnobotanical Publication Repositories</h4>
+              <p>naturelink operates a central physical herbarium in Saidu Sharif, Swat, logging indigenous wisdom alongside Western scientific names, accessible to university students.</p>
+              <div class="pubs">
+                <div class="pub"><strong>Phytochemical Analysis of Berberis lycium root extracts</strong><span>Peshawar Univ Journal 2025</span></div>
+                <div class="pub"><strong>Chilghoza Forest Regeneration rates under Community Conservancies</strong><span>Chitral Environmental Review 2026</span></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><span>🌿</span></div>
+
+    <!-- Quiz -->
+    <section class="section" id="quiz">
+      <div class="container">
+        <div class="card card--quiz" id="quiz-card">
+          <div class="quiz__head">
+            <div>
+              <span class="kicker">naturelink Youth Program • Assessment</span>
+              <h3 class="card__title">Himalayan Conservation Challenge</h3>
+              <p class="card__desc">Test your understanding of high-altitude ecosystems, endangered species, ethnobotany remedies, and sustainability strategies. Perfect for schools and universities!</p>
+            </div>
+            <div class="quiz__counter" id="quiz-counter">Q: 1 / 3</div>
+          </div>
+          <div id="quiz-body"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><span>🌿</span></div>
+
+    <!-- Research & Protected Areas -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="card card--protected">
+          <span class="kicker">Himalayan Forest Reserves Directory</span>
+          <h3 class="card__title">National Parks &amp; Wildlife Refuges</h3>
+          <p class="card__desc">These protected high valleys serve as sanctuaries for fragile mountain life, safeguarding endemic floral and faunal gene pools under Strict Conservation Protocols.</p>
+          <div class="park-grid" id="park-grid"></div>
+        </div>
+
+        <div class="research__grid">
+          <div class="card card--downloads">
+            <span class="card__icon">📖</span>
+            <h3 class="card__title">Research Download Center &amp; Syllabi</h3>
+            <p class="card__desc">Download our physical scientific handbooks prepared by naturelink coordinators to help high-altitude foragers and university scholars.</p>
+            <div class="downloads" id="downloads"></div>
+            <div class="note">⚠️ These files are strictly copyrighted under the scientific guidelines of the British Council naturelink and Peshawar Biological Conservancies.</div>
+          </div>
+
+          <div class="card card--partners">
+            <div class="partners__head">
+              <span class="card__icon">🔗</span>
+              <h3 class="card__title">Global Strategic Partners &amp; Repositories</h3>
+            </div>
+            <p class="card__desc">Connect with leading global conservances, UN environmental initiatives, and Pakistani scientific boards directly to study larger biodiversity metadata matrices.</p>
+            <div class="partner-grid" id="partner-grid"></div>
+            <div class="note note--center">ℹ️ Clicking links will securely redirect you to verified official resources in a new browser window.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><span>🌿</span></div>
+
+    <!-- Citizen Science -->
+    <section class="section" id="citizen">
+      <div class="container">
+        <div class="citizen__layout">
+          <div class="card card--form">
+            <span class="kicker">British Council naturelink • Community Sighting</span>
+            <h3 class="card__title">Volunteer Citizen Portal</h3>
+            <p class="card__desc">Spotted a rare animal species (like a Himalayan Monal, Kashmir Markhor, or Snow Leopard) or an endangered plant? Report your location coordinates to help environmental researchers.</p>
+            <div class="form-success" id="form-success" hidden>✔ Highly valued! Your report was captured in local citizen science ledger.</div>
+            <form id="sighting-form">
+              <label>Observer Name</label>
+              <input type="text" id="f-observer" required placeholder="e.g. Sajid Shah, Dr. Fatima" />
+              <div class="form-row">
+                <div><label>Species / Plant Spotted</label><input type="text" id="f-species" required placeholder="e.g. Snow Leopard, Deodar" /></div>
+                <div><label>Location District</label><input type="text" id="f-location" required placeholder="e.g. Kalam, Chitral National Park" /></div>
+              </div>
+              <label>Sighting Date</label>
+              <input type="date" id="f-date" />
+              <label>Visual Details &amp; Environment Notes</label>
+              <textarea id="f-notes" rows="3" placeholder="e.g. Number of individuals, health status, ecological surroundings, altitude, weather..."></textarea>
+              <button type="submit" class="btn btn--primary btn--block" id="submit-btn">Submit Scientific Report</button>
+            </form>
+          </div>
+
+          <div class="card card--feed">
+            <div class="feed__head">
+              <h4>Live Verified Sightings Log</h4>
+              <span class="feed__sync">● Local Ledger Sync</span>
+            </div>
+            <div class="feed__list" id="sightings-feed"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><span>🌿</span></div>
+
+    <!-- AI Companion -->
+    <section class="section" id="ai">
+      <div class="container">
+        <div class="card card--ai">
+          <div class="ai__head">
+            <div class="ai__title">
+              <span class="ai__badge">✦</span>
+              <div>
+                <span class="kicker">Powered by Gemini 3.5-Flash</span>
+                <h3>AI Himalayan Eco-Guide</h3>
+              </div>
+            </div>
+            <div class="chip">🧠 Scientifically Authoritative</div>
+          </div>
+          <p class="card__desc">Ask our naturelink AI companion about Hindu Kush ecosystems, ethnobotany remedies, or sustainable forestry practices...</p>
+          <div class="ai__prompts">
+            <button data-prompt="Healing benefits of Berberis lycium root">🌿 Healing benefits of Berberis lycium root</button>
+            <button data-prompt="How communities protect the Kashmir Markhor">🌿 How communities protect the Kashmir Markhor</button>
+            <button data-prompt="Sustainable harvesting of Saussurea lappa (Kuth)">🌿 Sustainable harvesting of Saussurea lappa (Kuth)</button>
+          </div>
+          <div class="ai__chat" id="ai-chat">
+            <div class="ai__msg ai__msg--bot">
+              <div class="ai__bubble">Hello! I am your AI Eco-Guide, powered by Gemini. Ask me any question regarding Pakistan's alpine wildlife, plants, national parks, and traditional ethnobotany remedies.</div>
+              <span class="ai__who">naturelink Scholar</span>
+            </div>
+          </div>
+          <div class="ai__input">
+            <input type="text" id="ai-input" placeholder="e.g. Traditional medicinal uses of Berberis lycium, or how chilghoza pine is harvested..." />
+            <button class="btn btn--primary" id="ai-send">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="naturelink Project Logo" />
+          <span>Hindu Kush Biodiversity Hub</span>
+        </div>
+        <p>naturelink is an ecological conservation, ethnobotany, and environmental awareness action strategy supported by the British Council. Our goal is to bridge modern botanical science with elder ecological wisdom.</p>
+        <p class="footer__cite">This website is the outcome of a collaboration between the <strong>University of the West of England (UWE)</strong> and <strong>University of Malakand (UoM)</strong>, funded by the <strong>British Council</strong> by PI: <strong>Dr. Kishwar Ali</strong>.</p>
+        <div class="footer__partners">
+          <div class="partner-badge" title="British Council"><img src="images/british-council.svg" alt="British Council" class="partner-badge__img" /></div>
+          <div class="partner-badge" title="University of the West of England (UWE)"><img src="images/uwe-bristol.svg" alt="UWE Bristol" class="partner-badge__img" /></div>
+          <div class="partner-badge" title="EPS"><img src="images/partners-logos/EPS_logo.jpeg" alt="EPS logo" class="partner-badge__img" /></div>
+          <div class="partner-badge" title="Kabal Degree College"><img src="images/partners-logos/Kabal_Degree_College_logo.jpeg" alt="Kabal Degree College logo" class="partner-badge__img" /></div>
+          <div class="partner-badge" title="University of Malakand"><img src="images/partners-logos/University-of-Malakand-logo.png" alt="University of Malakand logo" class="partner-badge__img" /></div>
+          <div class="partner-badge" title="University of Chitral"><img src="images/partners-logos/University_of_Chitral_Logo.jpeg" alt="University of Chitral logo" class="partner-badge__img" /></div>
+          <div class="partner-badge" title="Government Girls Degree College Timergara"><img src="images/partners-logos/govt-girls-degree-college-timergara.jpeg" alt="Government Girls Degree College Timergara logo" class="partner-badge__img" /></div>
+        </div>
+        <div class="footer__legal">© 2026. All rights and datasets strictly preserved under naturelink Standard License protocols.</div>
+        <div class="footer__social">
+          <a href="https://facebook.com" target="_blank" rel="noreferrer" title="Facebook">f</a>
+          <a href="https://twitter.com" target="_blank" rel="noreferrer" title="X / Twitter">𝕏</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" title="Instagram">◎</a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer" title="LinkedIn">in</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h5>Explore Segments</h5>
+        <ul>
+          <li><button data-scroll="map">Interactive Regional Map</button></li>
+          <li><button data-scroll="directory">Species Directories</button></li>
+          <li><button data-scroll="ethnobotany">Traditional Ethnobotany</button></li>
+          <li><button data-scroll="citizen">Citizen Science Portal</button></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Project Support</h5>
+        <p>Have research queries or want to join naturelink workshops? Get in touch with our district support office.</p>
+      </div>
+    </div>
+
+    <div class="container" id="contact">
+      <div class="contact">
+        <div class="contact__head">
+          <span class="kicker">Contact Us</span>
+          <h3 class="contact__title">Get in touch with the NatureLinks team</h3>
+          <p class="contact__desc">For research collaborations, workshop enquiries, or biodiversity data requests, reach out to our Principal Investigator directly.</p>
+        </div>
+        <div class="contact__cards">
+          <a class="contact__card" href="mailto:Kishwar.ali@uwe.ac.uk">
+            <span class="contact__icon">✉️</span>
+            <div>
+              <span class="contact__label">Email</span>
+              <span class="contact__value">Kishwar.ali@uwe.ac.uk</span>
+            </div>
+          </a>
+          <a class="contact__card" href="https://wa.me/447949898661" target="_blank" rel="noreferrer">
+            <span class="contact__icon">💬</span>
+            <div>
+              <span class="contact__label">WhatsApp</span>
+              <span class="contact__value">+44 7949 898661</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <div>🛡️ British Council Funded • Project Ref No. NL-2026-64B</div>
+      <div class="footer__links">
+        <a href="https://pakistan.britishcouncil.org/" target="_blank" rel="noreferrer">British Council PK</a>
+        <span>•</span>
+        <a href="#">Privacy and Data Ledgers</a>
+        <span>•</span>
+        <button onclick="alert('naturelink 2026. This app is secure and validated.')">Site Diagnostic</button>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" title="Scroll to Top" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
